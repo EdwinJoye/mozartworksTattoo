@@ -1,0 +1,39 @@
+.titreCarousel {
+  display: flex;
+  justify-content: center;
+  font-family: "Playfair Display SC", serif;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 18px;
+}
+.carousel {
+  width: 235px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.carousel:hover {
+  box-shadow: 0 0 7px 4px white;
+}
+
+.boxCarousel1 {
+  width: 100%;
+  object-fit: contain;
+}
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+@media screen and (max-width: 1512px) {
+  .carousel {
+    width: 190px;
+  }
+  .titreCarousel {
+    font-size: 16px;
+  }
+}

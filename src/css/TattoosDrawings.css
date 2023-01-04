@@ -1,0 +1,373 @@
+/* ///////////////// ANIMATIONS //////////////// */
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes SlideInFromLeft {
+  0% {
+    transform: translateX(-1000%);
+  }
+  80% {
+    transform: translateX(7%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes SlideInFromRight {
+  0% {
+    transform: translateX(1000%);
+  }
+  80% {
+    transform: translateX(-7%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes SlideInFromUp {
+  0% {
+    transform: translateY(-1000%);
+  }
+  80% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.boxEmptyPictures {
+  display: flex;
+}
+.emptyDiv {
+  display: flex;
+  flex: 1;
+  /* min-height: 970px; */
+  /* background-color: antiquewhite; */
+}
+.boxPicturesTitre {
+  display: flex;
+  flex-direction: column;
+  flex: 7;
+  /* background-color: red; */
+}
+.boxTitreMenu {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  /* background-color: yellow; */
+}
+.ensembleBoxTitre {
+  display: flex;
+  margin-right: 40px;
+  /* background-color: aqua; */
+}
+.footerFixed {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 999;
+}
+.boxTitre1 {
+  display: flex;
+  align-items: flex-end;
+  font-size: 50px;
+  color: white;
+  height: 100px;
+  font-family: "Playfair Display SC", serif;
+  animation: 3s ease-out SlideInFromLeft;
+  /* background-color: aqua; */
+}
+.boxTitre2 {
+  display: flex;
+  align-items: flex-end;
+  font-size: 50px;
+  color: white;
+  height: 100px;
+  margin-left: 20px;
+  font-family: "Playfair Display SC", serif;
+  animation: 2s ease-out SlideInFromUp;
+  /* background-color: aqua; */
+}
+.boxMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 500px;
+  animation: 2s ease-out SlideInFromRight;
+  /* background-color: red; */
+}
+.titresMenu {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+  padding: 10px;
+  height: 50px;
+  width: 120px;
+  cursor: pointer;
+  /* background-color: yellow; */
+}
+.boxEnsemblePictures {
+  display: flex;
+  justify-content: center;
+  /* padding: 20px; */
+}
+.boxPictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.boxPictures2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* background-color: aqua; */
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: calc(20% -20px);
+  margin: 0 10px 20px;
+  overflow: hidden;
+}
+.imgPortrait {
+  display: block;
+  width: 270px;
+}
+.imgPaysage {
+  display: block;
+  height: 270px;
+}
+.imageOverlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  opacity: 0;
+}
+.imageOverlay:hover {
+  animation: 1.5s opacity;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+.imageTitle {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  /* background-color: aqua; */
+}
+.descriptionImage {
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+  /* background-color: red; */
+}
+@media screen and (max-width: 1914px) {
+  .boxPictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .boxPictures2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 1880px) {
+  .footerFixed {
+    position: relative;
+  }
+}
+@media screen and (max-width: 1710px) {
+  .boxTitre1 {
+    font-size: 40px;
+  }
+  .boxTitre2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1515px) {
+  .imgPortrait {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .ensembleBoxPictures2 {
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+  }
+  .boxPictures2 {
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 20px;
+    /* background-color: aqua; */
+  }
+  .boxTitre1 {
+    font-size: 35px;
+  }
+  .boxTitre2 {
+    font-size: 35px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 1145px) {
+  .boxTitre1 {
+    font-size: 30px;
+  }
+  .boxTitre2 {
+    font-size: 30px;
+  }
+  .imgPortrait {
+    width: 230px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .boxTitre1 {
+    font-size: 25px;
+  }
+  .boxTitre2 {
+    font-size: 25px;
+  }
+  .imgPortrait {
+    width: 200px;
+  }
+  .emptyDiv {
+    flex: 0.5;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 950px) {
+  .imgPortrait {
+    width: 170px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .boxTitre1 {
+    font-size: 20px;
+  }
+  .boxTitre2 {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  .ensembleBoxTitre {
+    margin-bottom: 60px;
+  }
+  .boxPictures2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 850px) {
+  .imgPortrait {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .boxTitreMenu {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .boxTitre1 {
+    font-size: 17px;
+  }
+  .boxTitre2 {
+    font-size: 17px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .boxTitreMenu {
+    flex-direction: column;
+    margin-bottom: 0px;
+    align-items: center;
+  }
+  .ensembleBoxTitre {
+    margin-bottom: 10px;
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+  }
+
+  .boxTitre1 {
+    height: 20px;
+    font-size: 25px;
+  }
+  .boxTitre2 {
+    height: 20px;
+    font-size: 25px;
+  }
+  .divScrollingMenu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .imgPortrait {
+    display: block;
+    width: 230px;
+  }
+  .boxPictures {
+    padding-top: 20px;
+  }
+  .boxPictures2 {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .emptyDiv {
+    width: 60px;
+    justify-content: center;
+    min-height: 700px;
+    /* background-color: red; */
+  }
+}
+@media screen and (max-width: 420px) {
+  .boxTitre1 {
+    font-size: 20px;
+  }
+  .boxTitre2 {
+    font-size: 20px;
+  }
+  .boxTitreMenu {
+    margin-top: 0px;
+  }
+  .emptyDiv {
+    display: flex;
+    flex: 1;
+    min-height: 0px;
+    /* background-color: antiquewhite; */
+  }
+}

@@ -1,0 +1,38 @@
+.boxFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  background-color: white;
+  margin-top: 30px;
+}
+.emptyDivFooter {
+  display: flex;
+  flex: 1;
+}
+.centerBoxDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 8;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* background-color: aqua; */
+}
+.imgDroitAuteur {
+  height: 12px;
+  margin-right: 10px;
+}
+.titreFooter {
+  font-size: 12px;
+  margin-right: 10px;
+  color: black;
+}
+
+@media screen and (max-width: 970px) {
+  .boxFooter {
+    height: 20px;
+  }
+}

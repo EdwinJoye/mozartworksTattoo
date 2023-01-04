@@ -1,0 +1,10 @@
+body {
+  --def: #090e0c;
+  --inv: #fff;
+  background-color: #090e0c;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}

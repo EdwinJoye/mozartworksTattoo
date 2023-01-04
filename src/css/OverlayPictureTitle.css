@@ -1,0 +1,140 @@
+.testVisibleOuNon {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(black, 0.5);
+  z-index: 999;
+  display: none;
+  position: fixed;
+}
+.visible {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.testVisibleOuNon.visible {
+  display: block;
+}
+.firstImage {
+  cursor: pointer;
+}
+.boxTitleCarouselButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* background-color: brown; */
+}
+.croixCarouselOverlay {
+  height: 20px;
+  left: 1220px;
+  right: 10px;
+  top: 130px;
+  bottom: 5px;
+  position: absolute;
+  cursor: pointer;
+  /* background-color: red; */
+}
+.overlay2 {
+  left: 1150px;
+  right: 10px;
+  top: 120px;
+  bottom: 5px;
+  position: absolute;
+  color: white;
+  width: 20px;
+  height: 20px;
+  padding: 15px;
+  cursor: pointer;
+  background-color: red;
+}
+.boxTitleButton {
+  height: 50px;
+  /* background-color: red; */
+}
+.buttonFermer {
+  border-radius: 10px;
+}
+@media screen and (max-width: 1900px) {
+  .croixCarouselOverlay {
+    left: 1210px;
+  }
+}
+@media screen and (max-width: 1820px) {
+  .croixCarouselOverlay {
+    left: 1190px;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .croixCarouselOverlay {
+    left: 1170px;
+  }
+}
+@media screen and (max-width: 1780px) {
+  .croixCarouselOverlay {
+    left: 1150px;
+  }
+}
+@media screen and (max-width: 1760px) {
+  .croixCarouselOverlay {
+    left: 1130px;
+  }
+}
+@media screen and (max-width: 1740px) {
+  .croixCarouselOverlay {
+    left: 1110px;
+  }
+}
+@media screen and (max-width: 1720px) {
+  .croixCarouselOverlay {
+    left: 1090px;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .croixCarouselOverlay {
+    left: 1070px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .croixCarouselOverlay {
+    left: 1050px;
+  }
+}
+@media screen and (max-width: 1515px) {
+  .croixCarouselOverlay {
+    left: 1020px;
+    top: 70px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .croixCarouselOverlay {
+    top: 75px;
+    left: 400px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .croixCarouselOverlay {
+    left: 380px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .croixCarouselOverlay {
+    left: 370px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .croixCarouselOverlay {
+    left: 350px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .croixCarouselOverlay {
+    left: 330px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .croixCarouselOverlay {
+    left: 300px;
+  }
+}

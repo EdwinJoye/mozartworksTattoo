@@ -1,0 +1,146 @@
+@keyframes SlideInFromLeft {
+  0% {
+    transform: translateX(-1000%);
+  }
+  80% {
+    transform: translateX(7%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.boxEnsembleGallery {
+  width: 100%;
+  animation: 3s fadeIn;
+  /* background-color: red; */
+}
+.boxMilieuGallery {
+  display: flex;
+  /* background-color: aqua; */
+}
+.boxVideGallery {
+  display: flex;
+  flex: 1;
+  /* background-color: aqua; */
+}
+.boxCarouselsTitre {
+  display: flex;
+  flex-direction: column;
+  flex: 8;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* background-color: aqua; */
+}
+.boxTitreGallery {
+  display: flex;
+  align-items: center;
+  font-family: "Playfair Display SC", serif;
+  color: white;
+  height: 100px;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  animation: 4s ease-out SlideInFromLeft;
+  /* background-color: aqua; */
+}
+.ensembleBoxCategories {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+.boxCarousels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-color: aqua; */
+}
+.titreCarousel {
+  display: flex;
+  justify-content: center;
+  font-family: "Playfair Display SC", serif;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 18px;
+}
+@media screen and (max-width: 1880px) {
+  .ensembleBoxCategories {
+    display: flex;
+    align-items: center;
+    /* padding-bottom: 80px; */
+    /* background-color: red; */
+  }
+  .boxCarousels {
+    width: 1240px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .boxCarousels {
+    width: 980px;
+    margin-bottom: 200px;
+  }
+}
+@media screen and (max-width: 1710px) {
+  .boxTitreGallery {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1512px) {
+  .boxCarousels {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .boxCarousels {
+    width: 730px;
+  }
+  .boxTitreGallery {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .boxVideGallery {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 970px) {
+  .boxCarousels {
+    width: 490px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .boxCarousels {
+    width: 235px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .boxTitreGallery {
+    width: 100%;
+    justify-content: center;
+  }
+  .boxVideGallery {
+    width: 60px;
+    /* background-color: red; */
+  }
+  .boxCarouselsTitre {
+    padding: 0px;
+    align-items: center;
+    /* background-color: aqua; */
+  }
+  .ensembleBoxCategories {
+    padding-bottom: 0px;
+  }
+  .boxTitreGallery {
+    background-color: white;
+    color: black;
+    height: 50px;
+    width: 70%;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    /* border-radius: 10px; */
+  }
+}
