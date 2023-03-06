@@ -139,7 +139,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: calc(20% -20px);
   margin: 0 10px 20px;
   overflow: hidden;
 }
